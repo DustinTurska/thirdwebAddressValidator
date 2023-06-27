@@ -19,6 +19,8 @@ npx thirdweb deploy
 
 *AddressValidator.sol is chain specific, you must deploy the contract on the chain you wish to use it on.*
 
+https://thirdweb.com/kronickatz.eth/ContractAddressChecker/1.0.0
+
 ### Update addresses.ts
 
 Once the contract is deployed, update the contract address in `const/addresses.ts`
