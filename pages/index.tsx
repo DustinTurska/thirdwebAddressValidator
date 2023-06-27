@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Web3Button } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
+import { CONTRACT_ADDRESS } from "../const/addresses"
 
 export default function Component() {
   const [addressList, setAddressList] = useState<string[]>([]);
@@ -43,7 +44,7 @@ export default function Component() {
         cols={30}
       />
       <Web3Button
-        contractAddress="0x79d6D224c7516DA7DC3AD83392B62bf0Ebb9B981"
+        contractAddress={CONTRACT_ADDRESS}
         action={handleButtonClick}
         className={styles.button}
       >
