@@ -1,6 +1,7 @@
 ## Address Validator
 
 A useful tool for checking a list of wallet addresses before an airdrop. This tool takes in a list of addresses and returns bad and contract addresses that should be removed from the list. 
+<img width="690" alt="Screenshot 2023-06-27 at 9 50 48 AM" src="https://github.com/dturska12/thirdwebAddressValidator/assets/86588710/562b47f0-b842-4aba-81ed-c6c99d7edc22">
 
 ```bash
 git clone https://github.com/dturska12/thirdwebAddressValidator.git
