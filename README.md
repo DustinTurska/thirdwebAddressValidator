@@ -1,15 +1,27 @@
-## Getting Started
+## Address Validator
 
-Create a project using this example:
+A useful tool for checking a list of wallet addresses before an airdrop. This tool takes in a list of addresses and returns bad and contract addresses that should be removed from the list. 
 
 ```bash
-npx thirdweb create --template next-typescript-starter
+git clone https://github.com/dturska12/thirdwebAddressValidator.git
 ```
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+[UI Components](https://portal.thirdweb.com/ui-components) to work. Update `activeChain` to your network of choice.
+
+### Deploy AddressValidator.sol
+
+```bash
+npx thirdweb deploy
+```
+
+*AddressValidator.sol is chain specific, you must deploy the contract on the chain you wish to use it on.*
+
+### Update addresses.ts
+
+Once the contract is deployed, update the contract address in `const/addresses.ts`
 
 ### Deploy to IPFS
 
